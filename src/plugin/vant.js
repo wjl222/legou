@@ -1,0 +1,71 @@
+import {
+    Button,
+    Tabbar,
+    TabbarItem,
+    Field,
+    CellGroup,
+    NavBar,
+    Search,
+    Swipe, 
+    SwipeItem,
+    Grid, 
+    GridItem,
+    Tab, 
+    Tabs,
+    Image as VanImage,
+    Icon,
+    GoodsAction, 
+    GoodsActionIcon, 
+    GoodsActionButton,
+    Popup,
+    Stepper,
+    List,
+    Sidebar,
+    SidebarItem,
+    SwipeCell,
+    Card,
+    Checkbox, 
+    CheckboxGroup,
+    Toast,
+    RadioGroup, 
+    Radio,
+    AddressList,
+    AddressEdit,
+    Area
+} from 'vant';
+
+import Vue from 'vue'
+
+Vue.use(Button)
+  .use(Tabbar)
+  .use(TabbarItem)
+  .use(Field)
+  .use(NavBar)
+  .use(Search)
+  .use(Swipe)
+  .use(SwipeItem)
+  .use(Grid)
+  .use(GridItem)
+  .use(VanImage)
+  .use(Tab)
+  .use(Tabs)
+  .use(Icon)
+  .use(GoodsAction)
+  .use(GoodsActionIcon)
+  .use(GoodsActionButton)
+  .use(Popup)
+  .use(Stepper)
+  .use(List)
+  .use(Sidebar)
+  .use(SidebarItem)
+  .use(SwipeCell)
+  .use(Card)
+  .use(Checkbox)
+  .use(CheckboxGroup)
+  .use(Toast)
+  .use(RadioGroup)
+  .use(Radio)
+  .use(AddressList)
+  .use(AddressEdit)
+  .use(CellGroup)
+  .use(Area)

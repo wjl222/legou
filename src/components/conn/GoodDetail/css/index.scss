@@ -1,0 +1,250 @@
+@import "@/assets/commonVariable.scss";
+
+.van-swipe {
+  height: 375px;
+
+  img {
+    height: 100%;
+  }
+}
+
+.good_detail {
+  text-align: center;
+  border-bottom: 1px solid #f4f4f4;
+  background-color: #fff;
+
+  .name {
+    margin: 20px 0;
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  .good_brief {
+    color: #999;
+    font-size: 12px;
+    margin: 12px 0;
+  }
+
+  .retail_price {
+    margin: 5px 0 18px 0;
+    font-size: 17px;
+    color: #b4282d;
+  }
+}
+
+// 规则数量选择
+.section-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  height: 55px;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  line-height: 55px;
+  box-sizing: border-box;
+}
+
+// 商品参数
+.goods-detail {
+  padding-bottom: 20px;
+  background-color: #fff;
+
+  .goods-detail-title {
+    width: 345px;
+    margin: auto;
+    font-size: 20px;
+    padding: 10px 0;
+  }
+
+  .goods-detail-item {
+    display: flex;
+    width: 345px;
+    margin: 10px auto;
+    padding: 10px 0;
+    background-color: #f7f7f7;
+  }
+
+  .goods-detail-item-name {
+    text-align: center;
+    color: #999;
+    display: block;
+    width: 80px;
+  }
+
+  .goods-detail-item-detail {
+    width: 245px;
+    @include overEllipsis;
+  }
+}
+
+// 商品详情页的图片
+.goods-detail-img {
+  img {
+    width: 100%;
+  }
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 17.5px 0;
+
+  span {
+    margin: 0px 5px;
+  }
+
+  .line {
+    display: block;
+    height: 0.5px;
+    width: 50px;
+    background-color: #ccc;
+  }
+}
+
+// 常见问题
+.issue {
+  background-color: #fff;
+  margin-bottom: 30px;
+}
+
+// 问答
+.question-answer-c {
+  width: 345px;
+  margin: auto;
+
+  div {
+    margin-bottom: 5px;
+    font-size: 13px;
+  }
+
+  .question {
+    position: relative;
+    padding-left: 8px;
+    color: #303030;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0px;
+      display: block;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background-color: $theme_colors;
+      // border: 1px solid $theme_colors;
+    }
+  }
+
+  .answer {
+    padding-left: 18px;
+    color: #787878;
+  }
+}
+
+// 底部收藏按钮
+.van-goods-action {
+  .collect .van-icon.van-icon-star-o.van-goods-action-icon__icon {
+    color: $theme_colors
+  }
+
+}
+
+.everywatch {
+  background-color: #fff;
+}
+
+.popup-top {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background-color: rgba($color: #000000, $alpha: 0.6);
+}
+
+.popup {
+  width: 100%;
+  height: 35%;
+  position: fixed;
+  bottom: 0;
+  z-index: 9;
+  background-color: #fff;
+
+  .popup-c {
+    position: relative;
+    padding: 15px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+
+    .colse {
+      position: absolute;
+      width: fit-content;
+      right: 15px;
+      top: 15px;
+    }
+
+    .popup-title {
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+
+    .popup-txt {
+      margin-left: 20px;
+
+      span {
+        &:nth-child(1) {
+          color: $theme_colors;
+        }
+
+        display: block;
+        margin: 12px 0;
+      }
+    }
+
+    .stepper {
+      &>span {
+        display: block;
+        margin: 7px 0;
+      }
+    }
+  }
+
+  img {
+    width: 88px;
+    height: 88px;
+  }
+}
+
+// 离开出场动画
+
+.nameoftransition-enter {
+  height: 0%;
+}
+
+.nameoftransition-enter-to {
+  height: 35%;
+}
+
+.nameoftransition-enter-active {
+  transition: all 0.4s ease;
+}
+
+.nameoftransition-leave {
+  height: 35%;
+}
+
+.nameoftransition-leave-to {
+  height: 0%;
+}
+
+.nameoftransition-leave-active {
+  transition: all 0.4s ease;
+}

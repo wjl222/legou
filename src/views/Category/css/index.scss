@@ -1,0 +1,129 @@
+.category-c {
+    height: 100%;
+    padding-bottom: 45px;
+    .top {
+        position: relative;
+        background-color: #fff;
+        width: 100%;
+        height: 45px;
+
+        .top-c {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 345px;
+            margin: auto;
+            text-align: center;
+            height: 28px;
+            line-height: 28px;
+            background-color: #ededed;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+
+            i {
+                vertical-align: middle;
+            }
+        }
+    }
+}
+
+.van-sidebar {
+    width: fit-content;
+}
+
+.con-c {
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+    height: calc(100% - 45px);
+}
+
+.sidebar-c {
+    height: 100%;
+
+    ::v-deep .van-sidebar-item {
+        width: 100px;
+        height: 45px;
+        box-sizing: border-box;
+        padding: 10px 0;
+        line-height: 25px;
+        text-align: center;
+        background-color: #fff;
+    }
+
+    ;
+
+    ::v-deep .van-sidebar-item--select::before {
+        height: 100%;
+        width: 2px;
+    }
+}
+
+.content-c {
+    box-sizing: border-box;
+    width: 275px;
+    padding: 0 20px;
+    .content-t-img {
+        width: 100%;
+        height: 110px;
+        margin-top: 10px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .content-title-txt {
+        width: 100%;
+        text-align: center;
+        padding: 25px 0;
+
+        .text {
+            position: relative;
+            width: fit-content;
+            margin: auto;
+
+            span.line {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                display: block;
+                width: 16px;
+                height: 1px;
+                background-color: #999;
+                -webkit-transform: translateY(-50%);
+                -moz-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                -o-transform: translateY(-50%);
+            }
+            span.right {
+                right: -20px;
+            }
+            span.left {
+                left: -20px;
+            }
+        }
+    }
+}
+
+.goods-show {
+    .good-item {
+        text-align: center;
+        width: 33.3%;
+        margin-bottom: 10px;
+        img {
+            width: 72px;
+            height: 72px;
+        }
+
+    }
+    .good-item-name {
+        display: block;
+        text-align: center;
+
+    }
+}
